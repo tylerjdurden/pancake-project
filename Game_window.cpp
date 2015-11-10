@@ -13,7 +13,7 @@ Game_window::Game_window(Point xy, int w, int h, const string& title)
     }
 }
 
-static void Game_window::cb(Address, Address data)
+void Game_window::cb(Address, Address data)
 {
     static_cast<Game_window*>(data)->next();
 }
